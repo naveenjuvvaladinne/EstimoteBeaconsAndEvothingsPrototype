@@ -68,37 +68,37 @@ var app = (function() {
 	}
 
 	function turnOnBulb() {
-		$.getJSON('https://maker.ifttt.com/trigger/entered_room/with/key/{YOURKEYHERE}?jsoncallback=?', {
+		$.getJSON("https://maker.ifttt.com/trigger/entered_room/with/key/{YOURKEYHERE}?jsoncallback=?", {
 			format: "json"
 		}, function() {
 			console.log("Entered room and told IFTTT about it!");
 		})
 		.done(function(data) {
-			console.log('Done');
+			console.log("Done");
 		})
 		.fail(function(data) {
 			console.log(JSON.stringify(data));
 		})
 		.always(function(data) {
-			console.log('Finished');
+			console.log("Finished");
 		});
     console.log("Turn on bulb");
 	}
 
 	function turnOffBulb() {
-		$.getJSON('https://maker.ifttt.com/trigger/left_room/with/key/{YOURKEYHERE}?jsoncallback=?', {
+		$.getJSON("https://maker.ifttt.com/trigger/left_room/with/key/{YOURKEYHERE}?jsoncallback=?", {
 			format: "json"
 		}, function() {
 			console.log("Left room and told IFTTT about it!");
 		})
 		.done(function(data) {
-			console.log('Done');
+			console.log("Done");
 		})
 		.fail(function(data) {
 			console.log(JSON.stringify(data));
 		})
 		.always(function(data) {
-			console.log('Finished');
+			console.log("Finished");
 		});
     console.log("Turn off bulb");
 	}
