@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no
+			initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<title>Magical room light automation</title>
+		<style>
+			@import 'ui/css/evothings-app.css';
+			@import 'ui/css/patcat.css';
+		</style>
+		<script>
+		// Redirect console.log to Evothings Workbench.
+		if (window.hyper && window.hyper.log) { console.log = hyper.log }
+		</script>
+
+		<script src="cordova.js"></script>
+		<script src="libs/jquery/jquery.js"></script>
+		<script src="libs/evothings/evothings.js"></script>
+		<script src="libs/evothings/ui/ui.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<header>
+			<button class="back" onclick="history.back()">
+				<img src="ui/images/arrow-left.svg" />
+			</button>
+
+			<img class="logotype" src="ui/images/logo.svg" alt="Evothings" />
+		</header>
+		<h1>Magical room light automation</h1>
+		<div id="in-room"></div>
+	</body>
+</html>

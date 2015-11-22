@@ -1,0 +1,32 @@
+html,
+body,
+section,
+main footer {
+	background: #390066;
+	color: #fff;
+	text-align: center;
+}
+
+header {
+	background: #EACFF3;
+}
+
+.in-room,
+.in-room body,
+.in-room section,
+.in-room main footer {
+	background: #F3EC97;
+	color: #333;
+}
+
+.in-room h1 {
+	color: #333;
+}
+
+.in-room header {
+	background: #F3EDE6;
+}
+
+h1 {
+	padding: 0 0 1em;
+}
