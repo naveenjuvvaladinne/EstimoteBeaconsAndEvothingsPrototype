@@ -1,4 +1,4 @@
-Estimote Beacon and Evothings Room Automation Prototype
+Estimote Beacons and Evothings Prototype
 ========
 
 This is a demo to show how to use Evothings to put together an Estimote Beacon prototype using HTML and JavaScript.
